@@ -43,11 +43,8 @@ function Example() {
 
   const handleClick=(currentItem)=>{
     let circleconfig= check.map(item=>{
-      // (item.index ===currentItem.index? {...item,active:!item.active}:item)
-  if(item.index===currentItem.index){
-    item.active=!item.active
-  }
-  return item
+  
+  return (item.index ===currentItem.index? {...item,active:!item.active}:item)
 }
   )
     setcheck(circleconfig)
