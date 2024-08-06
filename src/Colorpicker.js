@@ -4,6 +4,7 @@ import './App.css';
 const initialState = [
 ];
 
+// color picker state controller
 const Colorpicker = () => {
   const [cur, setCur] = useState(initialState);
 
